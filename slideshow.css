@@ -1,0 +1,81 @@
+.show {
+    color: #3949ab;
+    float: right;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+.show:hover {
+    color: aqua;
+}
+
+.event-1 {
+    padding: 15px;
+    margin: 20px;
+}
+
+.event-1 h1 {
+    color: #3949ab;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    border-bottom: #6a6aff solid 2px;
+    text-align: left;
+    padding-bottom: 17px;
+}
+
+.belt-container {
+    overflow: hidden;
+    width: 100%;
+    background-color: #f0f0f0; /* Optional: background color for the container */
+    position: relative;
+    padding-top: 15px;
+  }
+  
+  .belt {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .belt-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px; /* Space between images */
+  }
+  
+  .belt img {
+    height: 200px; /* Adjust height as needed */
+    width: 300px;
+  }
+  
+  .description {
+    text-align: center;
+    margin-top: 5px; /* Space between image and description */
+  }
+  
+  .nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10; /* Ensure buttons are above the belt */
+  }
+  
+  #prev {
+    left: 10px;
+  }
+  
+  #next {
+    right: 10px;
+  }
+  .btn-news {
+    background-color: #6a6aff;
+    float: right;
+    border: none;
+    border-radius: 5px;
+  }

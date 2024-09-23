@@ -1,0 +1,151 @@
+<style>
+  
+.get-in-touch {
+    background-color: #22427C;
+    padding: 30px;
+    color: #F4D081;
+    text-align: center;
+}
+
+.get-in-touch h2 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form input {
+    height: 40px;
+}
+
+.contact-form textarea {
+    height: 200px;
+    resize: none;
+}
+
+.contact-form button {
+    background-color: #F4D081;
+    color: #22427C;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.contact-form button:hover {
+    background-color: #e2bc6a;
+}  
+/* Styles for Desktops (min-width: 1025px) */
+@media (min-width: 1025px) {
+    .get-in-touch {
+        padding: 40px;
+    }
+
+    .get-in-touch h2 {
+        font-size: 28px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        max-width: 700px;
+        padding: 12px;
+    }
+
+    .contact-form button {
+        font-size: 20px;
+        padding: 12px 24px;
+    }
+}
+
+/* Tablet Styles (min-width: 768px and max-width: 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .get-in-touch {
+        padding: 35px;
+    }
+
+    .get-in-touch h2 {
+        font-size: 26px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        max-width: 650px;
+        padding: 12px;
+    }
+
+    .contact-form button {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+}
+
+/* Mobile Styles (max-width: 767px) */
+@media (max-width: 767px) {
+    .get-in-touch {
+        padding: 25px;
+    }
+
+    .get-in-touch h2 {
+        font-size: 22px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .contact-form button {
+        font-size: 16px;
+        padding: 10px 18px;
+    }
+}
+
+/* Extra Small Devices (max-width: 480px) */
+@media (max-width: 480px) {
+    .get-in-touch {
+        padding: 20px;
+    }
+
+    .get-in-touch h2 {
+        font-size: 20px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 8px;
+    }
+
+    .contact-form button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+</style>
+<div class="get-in-touch">
+    <h2>request info</h2>
+    <form class="contact-form">
+        <input type="email" placeholder="Your Email" required>
+        <input type="email" placeholder="subject" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+    </form>
+</div>

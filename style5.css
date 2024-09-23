@@ -1,0 +1,242 @@
+
+.contact-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.contact-header {
+    background-color: #f4e1a1;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-header h1 {
+    margin: 0;
+    color: #22427C;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.contact-header .arrow {
+    color: #22427C;
+    font-size: 36px;
+    margin-right: 10px;
+}
+
+.contact-details {
+    background-color: #F4D081;
+    padding: 20px;
+}
+
+.contact-details h2 {
+    color: #22427C;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-columns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-item {
+    width: 45%;
+    margin-bottom: 20px;
+}
+
+.contact-item h3 {
+    color: #22427C;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.contact-item p {
+    color: #333;
+    font-size: 16px;
+    margin: 0;
+}
+
+.contact-item a {
+    color: #333;
+    text-decoration: none;
+}
+
+.get-in-touch {
+    background-color: #22427C;
+    padding: 30px;
+    color: #F4D081;
+    text-align: center;
+}
+
+.get-in-touch h2 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form input {
+    height: 40px;
+}
+
+.contact-form textarea {
+    height: 200px;
+    resize: none;
+}
+
+.contact-form button {
+    background-color: #F4D081;
+    color: #22427C;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.contact-form button:hover {
+    background-color: #e2bc6a;
+}
+/* Styles for Desktops (min-width: 1025px) */
+@media (min-width: 1025px) {
+    .contact-container {
+        width: 70%;
+    }
+
+    .contact-header h1 {
+        font-size: 36px;
+    }
+
+    .contact-header .arrow {
+        font-size: 40px;
+    }
+
+    .contact-details h2,
+    .get-in-touch h2 {
+        font-size: 28px;
+    }
+
+    .contact-item {
+        width: 45%;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        max-width: 800px;
+    }
+}
+
+/* Tablet Styles (min-width: 768px and max-width: 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .contact-container {
+        width: 85%;
+    }
+
+    .contact-header h1 {
+        font-size: 34px;
+    }
+
+    .contact-header .arrow {
+        font-size: 38px;
+    }
+
+    .contact-details h2,
+    .get-in-touch h2 {
+        font-size: 26px;
+    }
+
+    .contact-item {
+        width: 48%;
+        margin-bottom: 15px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        max-width: 700px;
+    }
+}
+
+/* Mobile Styles (max-width: 767px) */
+@media (max-width: 767px) {
+    .contact-container {
+        width: 95%;
+    }
+
+    .contact-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-header .arrow {
+        display: none; /* Hide the arrow on small screens */
+    }
+
+    .contact-header h1 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .contact-details h2,
+    .get-in-touch h2 {
+        font-size: 24px;
+    }
+
+    .contact-columns {
+        flex-direction: column;
+    }
+
+    .contact-item {
+        width: 100%;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        max-width: 100%;
+    }
+
+    .contact-form button {
+        width: 100%;
+    }
+}
+
+/* Extra Small Devices (max-width: 480px) */
+@media (max-width: 480px) {
+    .contact-header h1 {
+        font-size: 26px;
+    }
+
+    .contact-details h2,
+    .get-in-touch h2 {
+        font-size: 22px;
+    }
+
+    .contact-item h3 {
+        font-size: 16px;
+    }
+
+    .contact-item p {
+        font-size: 14px;
+    }
+
+    .contact-form button {
+        font-size: 16px;
+    }
+}

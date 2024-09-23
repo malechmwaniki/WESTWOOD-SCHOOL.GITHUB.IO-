@@ -1,0 +1,654 @@
+/* General body styling */
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    flex-direction: column;
+    min-height: 190vh;
+}
+
+/* Header section */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ecf0f1;
+    background-color: #276aad; /* Navy blue color for the school theme */
+    padding: 0;
+    position: fixed;
+    width: 100%;
+    height: 140px;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Logo styling */
+.logo img {
+    width: 250px;
+    height: 145px;
+    border-radius: 5px;
+}
+
+/* Nav bar styling */
+nav {
+    flex-grow: 1;
+    padding-left: 0px;
+    padding-right: 80px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-family: fantasy;
+    font-size: 18px;
+    padding: 10px 15px;
+    text-transform: uppercase;
+}
+
+.nav-links a:hover {
+    border-bottom: #d3ff0e 5px solid; /* Slightly lighter blue on hover */
+}
+
+/* Main content styling */
+main {
+    flex: 1;
+    padding-top: 80px; /* To offset the fixed header */
+}
+
+/* Hide all sections initially */
+.content-section {
+    display: none;
+}
+
+/* Show active section */
+.content-section.active {
+    display: block;
+}
+
+/* Section styling */
+section {
+    padding: 80px 20px;
+    margin-top: 20px; /* Adjusted margin */
+}
+
+#about {
+    padding: 0%;
+    scroll-behavior: smooth;
+}
+.hands {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: changeBackground 20s  infinite;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+
+@keyframes changeBackground {
+0% {
+    background-image: url('stock-photo-excited-elementary-school-.jpg'); /* Replace with your first image URL */
+}b
+44% {
+    background-image: url('images-uniform.jpeg'); /* Replace with your second image URL */
+}
+66% {
+    background-image: url('basketball.jpeg'); /* Replace with your third image URL */
+}
+100% {
+    background-image: url('computer-lab.jpg'); /* Loops back to the first image */
+}
+}
+
+.text-container {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    font-size: 4rem;
+    font-weight: bold;
+    animation: animateText 2s ease-out forwards;
+    color:#f9c973;
+}
+
+/* Animation to move the text from bottom to center */
+@keyframes animateText {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(-50%);
+        opacity: 1;
+    }
+}
+
+
+
+.principal-message-section {
+    background-color: #3949ab;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    max-width: 1100px;
+    margin: 20px;
+    margin-left: 10%;
+}
+
+.principal-photo img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
+}
+
+.principal-message {
+    padding: 20px;
+    flex: 1;
+}
+
+.principal-message h1 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color:#f9c973;
+}
+
+.principal-message p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #ffffff;
+}
+
+.principal-message p:last-child {
+    margin-top: 20px;
+    font-style: italic;
+    color: #ffffff;
+    font-weight: bold;
+}
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.mvv-wrapper {
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    padding: 20px 0;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    max-width: 1200px;
+    min-height: 80vh;
+
+    /* Initially hidden and positioned lower */
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.mvv-wrapper.animate {
+    /* Animate to the original position */
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Section that holds Mission and Vision */
+.mission-vision-section {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+/* Individual card for Mission and Vision */
+.info-card {
+    background-color:#f9c973;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 45%;
+    min-width: 280px;
+    height: auto;
+}
+
+.info-card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+/* Section for Values */
+.values-section {
+    background-color:#f9c973;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 20px;
+    width: 70%;
+    max-width: 800px;
+}
+
+.values-section img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Heading style */
+.section-title {
+    color: #333;
+    font-size: 1.5rem;
+}
+
+/* Paragraph style */
+.section-text {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .text-container {
+        top: 50%;
+    }
+
+    .principal-message-section {
+        display: block;
+    }
+ 
+.principal-photo img {
+    width: 500px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
+}
+    
+
+    .mission-vision-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-card {
+        width: 80%;
+    }
+
+    .values-section {
+        width: 90%;
+    }
+}
+
+/* Responsive styling */
+@media (max-width: 448px) {
+    header {
+        flex-direction: row;
+        align-items: center;
+
+    }
+
+    /* Logo should take 80% of the width */
+    .logo .img{
+        width: 40rem;
+        height: 30rem;
+    }
+
+    /* Hamburger menu styling */
+    .hamburger {
+        width: 20%;
+        text-align: right;
+        padding-right: 0px;
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger img {
+        width: 300px;
+        height: 130px;
+    }
+
+    /* Hide the navigation links initially */
+    .nav-links {
+        flex-direction: column;
+        position: fixed;
+        top: 10px;
+        right: 0;
+        background-color: #003366;
+        width: 200px;
+        height: 100vh;
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+        z-index: 1000; /* Ensure the menu is above other content */
+    }
+
+    /* Show nav-links when active */
+    .nav-links.active {
+        transform: translateX(0);
+    }
+
+    .nav-links li {
+        margin: 20px 0;
+    }
+
+    .nav-links a {
+        padding: 20px;
+        font-size: 18px;
+    }
+    
+   
+    
+
+    /* Close button for nav */
+    .close-btn {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        height: 30px;
+        border: none;
+        border-radius: 50%;
+        font-size: 25px;
+        cursor: pointer;
+        color: white; /* Ensure the close button is visible */
+        background-color: #003366; /* Match the background */
+    }
+
+    /* Hide hamburger menu on larger screens */
+    .hamburger img {
+        display: block;
+    }
+
+    .close-btn {
+        display: block;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .principal-message-section {
+        display: block;
+    }
+ 
+.principal-photo img {
+    width: 500px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
+}
+    
+
+    .mission-vision-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-card {
+        width: 80%;
+    }
+
+    .values-section {
+        width: 90%;
+    }
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    header {
+        flex-direction: row;
+        align-items: center;
+
+    }
+
+    /* Logo should take 80% of the width */
+    .logo .img{
+        width: 40rem;
+        height: auto;
+    }
+
+    /* Hamburger menu styling */
+    .hamburger {
+        width: 20%;
+        text-align: right;
+        padding-right: 0px;
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger img {
+        width: 200px;
+        height: 130px;
+    }
+
+    /* Hide the navigation links initially */
+    .nav-links {
+        flex-direction: column;
+        position: fixed;
+        top: 10px;
+        right: 0;
+        background-color: #003366;
+        width: 200px;
+        height: 100vh;
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+        z-index: 1000; /* Ensure the menu is above other content */
+    }
+
+    /* Show nav-links when active */
+    .nav-links.active {
+        transform: translateX(0);
+    }
+
+    .nav-links li {
+        margin: 20px 0;
+    }
+
+    .nav-links a {
+        padding: 20px;
+        font-size: 18px;
+    }
+    
+   
+    
+
+    /* Close button for nav */
+    .close-btn {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        height: 30px;
+        border: none;
+        border-radius: 50%;
+        font-size: 25px;
+        cursor: pointer;
+        color: white; /* Ensure the close button is visible */
+        background-color: #003366; /* Match the background */
+    }
+
+    /* Hide hamburger menu on larger screens */
+    .hamburger img {
+        display: block;
+    }
+
+    .close-btn {
+        display: block;
+    }
+}
+
+
+/* Hide hamburger menu and close button on large screens */
+@media (min-width: 769px) {
+  
+
+    .nav-links {
+        display: flex;
+        position: static;
+        transform: none;
+        width: auto;
+        height: auto;
+        background-color: transparent;
+    }
+
+    .close-btn {
+        display: none;
+    }
+    .hamburger img {
+        display: none;
+    }
+}/* Responsive Design Adjustments */
+
+/* For tablets (portrait and landscape) */
+@media (max-width: 1024px) {
+    header {
+        height: 120px;
+        padding: 0 10px;
+    }
+
+    .nav-links a {
+        font-size: 16px;
+        padding: 8px 12px;
+    }
+
+    .principal-message h1 {
+        font-size: 1.5em;
+    }
+
+    .principal-message p {
+        font-size: 1em;
+    }
+
+    .mvv-wrapper {
+        padding: 15px 0;
+    }
+
+    .text-container {
+        font-size: 3rem;
+    }
+}
+
+
+
+/* For small smartphones */
+@media (max-width: 480px) {
+    header {
+        height: 80px;
+        padding: 0 5px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+        padding: 6px 8px;
+    }
+
+    .logo img {
+        width: 140px;
+        height: auto;
+    }
+
+    .principal-message h1 {
+        font-size: 1.2em;
+    }
+
+    .principal-message p {
+        font-size: 0.9em;
+    }
+
+    .mvv-wrapper {
+        padding: 10px 0;
+    }
+
+    .text-container {
+        font-size: 2rem;
+        padding: 10px;
+    }
+
+    .info-card {
+        padding: 15px;
+    }
+
+    .values-section {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+/* For very small devices */
+@media (max-width: 360px) {
+    header {
+        height: 70px;
+        padding: 0 5px;
+    }
+
+    .nav-links a {
+        font-size: 10px;
+        padding: 5px 7px;
+    }
+
+    .logo img {
+        width: 120px;
+        height: auto;
+    }
+
+    .principal-message h1 {
+        font-size: 1em;
+    }
+
+    .principal-message p {
+        font-size: 0.85em;
+    }
+
+    .mvv-wrapper {
+        padding: 5px 0;
+    }
+
+    .text-container {
+        font-size: 1.8rem;
+        padding: 8px;
+    }
+
+    .info-card {
+        padding: 10px;
+    }
+
+    .values-section {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+
+
